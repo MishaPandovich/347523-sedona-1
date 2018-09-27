@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Виктория Лобода](https://up.htmlacademy.ru/adaptive/15/user/347523).
-* Наставник: `Мне он не нужен ~(- _ -)~`.
+* Наставник: `-`.
 
 ---
 
