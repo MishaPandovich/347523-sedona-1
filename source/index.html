@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Sedona</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
@@ -23,11 +25,11 @@
         <a class="button-mobile__close" href="#"><span class="visually-hidden">Закрыть</span></a>
       </div>
     </nav>
-    <div class="content page-header__content">
+    <div class="header-content page-header__header-content">
       <!--Ещё не ясно будет это блок с фиксированной шириной внутири которого SVG или фон через псевдоклас-->
       <div class="content-inner">
-        <b class="caption">Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
-        <p class="text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <b class="caption header-content__caption">Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
+        <p class="text header-content__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
     </div>
   </header>
@@ -86,9 +88,9 @@
       </li>
     </ul>
     <div class="content-search">
-      <b class="caption">Заинтересовались?</b>
-      <p class="text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <a class="link-search" href="#">Найти гостинницу</a>
+      <b class="caption content-search__caption">Заинтересовались?</b>
+      <p class="text content-search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <a class="button button--blue content-search__button" href="#">Найти гостинницу</a>
     </div>
     <div class="map">
     </div>
@@ -98,7 +100,10 @@
     <div class="social page-footer__social">
       <a class="social__link social__link--twitter" href="#">Twitter</a>
       <a class="social__link social__link--facebook" href="#">Facebook</a>
-      <a class="social__link social__link--youtube" href="#">Youtobe</a>
+      <a class="social__link social__link--youtube" href="#">Youtube</a>
+    </div>
+    <div class="copyright page-footer__copyright">
+      <a class="copyright__link" href="https://echo.htmlacademy.ru">Разработано</a>
     </div>
   </footer>
 </body>

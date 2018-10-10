@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Sedona</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
@@ -23,24 +25,24 @@
         <a class="button-mobile__close" href="#"><span class="visually-hidden">Закрыть</span></a>
       </div>
     </nav>
-    <div class="content page-header__content">
+    <div class="header-content page-header__header-content">
       <!--Ещё не ясно будет это блок с фиксированной шириной внутири которого SVG или фон через псевдоклас-->
       <div class="content-inner">
-        <b class="caption">Оставьте свой отзыв</b>
-        <p class="text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <b class="caption header-content__caption">Оставьте свой отзыв</b>
+        <p class="text header-content__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
     </div>
   </header>
   <main class="page-main">
     <form class="form-feedback" action="#" method="post">
-      <fieldset class="section section-fio">
+      <fieldset class="section section-full-name">
         <legend class="section__caption">Представьтесь:</legend>
-        <label class="section-fio__label" for="name">Имя*:</label>
-        <input class="section-fio__input" type="text" name="name" placeholder="Петр" id="name" required>
-        <label class="section-fio__label"for="surname">Фамилия*:</label>
-        <input class="section-fio__input"  type="text" name="surname" placeholder="Иванов" id="surname" required>
-        <label class="section-fio__label" for="patronymic">Отчество:</label>
-        <input class="section-fio__input"  type="text" name="patronymic" placeholder="Александрович" id="patronymic">
+        <label class="section-full-name__label" for="name">Имя*:</label>
+        <input class="section-full-name__input" type="text" name="name" placeholder="Петр" id="name" required>
+        <label class="section-full-name__label"for="surname">Фамилия*:</label>
+        <input class="section-full-name__input"  type="text" name="surname" placeholder="Иванов" id="surname" required>
+        <label class="section-full-name__label" for="patronymic">Отчество:</label>
+        <input class="section-full-name__input"  type="text" name="patronymic" placeholder="Александрович" id="patronymic">
       </fieldset>
       <fieldset class="section section-contacts">
         <legend class="section__caption">Контактная информация:</legend>
@@ -51,7 +53,7 @@
       </fieldset>
       <fieldset class="section section-rating">
         <legend class="section__caption">Ваше общее впечатление:</legend>
-        <input class="section-rating__input" type="radio" name="rating" value="good" id="good">
+        <input class="section-rating__input" type="radio" name="rating" value="good" id="good" checked>
         <label class="section-rating__label" for="good">Скорее положительное</label>
         <input class="section-rating__input" type="radio" name="rating" value="bad" id="bad">
         <label class="section-rating__label" for="bad">Скорее отрицательное</label>
@@ -60,20 +62,20 @@
       </fieldset>
       <fieldset class="section section-place">
         <legend class="section__caption">Посещенные достопримечательности:</legend>
-        <input class="section-place__input" type="radio" name="devil-bridge" value="devil-bridge" id="devil-bridge" checked>
+        <input class="section-place__input" type="checkbox" name="devil-bridge" value="devil-bridge" id="devil-bridge" checked>
         <label class="section-place__label" for="devil-bridge">Мост Дьявола</label>
-        <input class="section-place__input" type="radio" name="mountain-bell" value="mountain-bell" id="mountain-bell" checked>
+        <input class="section-place__input" type="checkbox" name="mountain-bell" value="mountain-bell" id="mountain-bell" checked>
         <label class="section-place__label" for="mountain-bell">Гора-Колокол</label>
-        <input class="section-place__input" type="radio" name="slide-park" value="slide-park" id="slide-park"checked>
+        <input class="section-place__input" type="checkbox" name="slide-park" value="slide-park" id="slide-park"checked>
         <label class="section-place__label" for="slide-park">Слайд-парк</label>
-        <input class="section-place__input" type="radio" name="red-rock" value="red-rock" id="red-rock">
+        <input class="section-place__input" type="checkbox" name="red-rock" value="red-rock" id="red-rock">
         <label class="section-place__label" for="red-rock">Красные скалы</label>
       </fieldset>
       <fieldset class="section section-comment">
         <legend class="section__caption">Опишите свои эмоции:</legend>
-        <textarea class="section-comment__input" name="comment">Опишите подробно все свои восторги</textarea>
+        <textarea class="section-comment__input" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
-      <input class="form-feedback__input-submit" type="submit" name="submit-form" value="отправить отзыв">
+      <input class="button button--blue form-feedback__button" type="submit" name="submit-form" value="отправить отзыв">
     </form>
   </main>
   <footer class="page-footer">
@@ -81,7 +83,7 @@
     <div class="social page-footer__social">
       <a class="social__link social__link--twitter" href="#">Twitter</a>
       <a class="social__link social__link--facebook" href="#">Facebook</a>
-      <a class="social__link social__link--youtube" href="#">Youtobe</a>
+      <a class="social__link social__link--youtube" href="#">Youtube</a>
     </div>
     <div class="copyright page-footer__copyright">
       <a class="copyright__link" href="https://echo.htmlacademy.ru">Разработано</a>

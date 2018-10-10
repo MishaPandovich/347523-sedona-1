@@ -1,0 +1,20 @@
+.page-footer {
+  border: 1px solid red;
+}
+
+.page-footer__caption {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.copyright__link {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: $color-link-black;
+}

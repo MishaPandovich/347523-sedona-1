@@ -1,0 +1,21 @@
+// для сетки
+.nav {
+  border: 1px solid red;
+}
+
+.nav-list {
+  @include list-style-none;
+  background-color: $color-background-blue;
+}
+
+.nav-list__link {
+  display: block;
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  color: $color-font-white;
+}
