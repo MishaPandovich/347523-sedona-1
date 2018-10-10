@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Sedona</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
@@ -23,11 +25,11 @@
         <a class="button-mobile__close" href="#"><span class="visually-hidden">Закрыть</span></a>
       </div>
     </nav>
-    <div class="content page-header__content">
+    <div class="header-content page-header__header-content">
       <!--Ещё не ясно будет это блок с фиксированной шириной внутири которого SVG или фон через псевдоклас-->
       <div class="content-inner">
-        <b class="caption">Фото и видео</b>
-        <p class="text">Не можете решиться на путишествие из-за курса? фотографии помогут вам забыть о политике и экономике.</p>
+        <b class="caption header-content__caption">Фото и видео</b>
+        <p class="text header-content__text">Не можете решиться на путишествие из-за курса? фотографии помогут вам забыть о политике и экономике.</p>
       </div>
     </div>
   </header>
@@ -35,25 +37,25 @@
     <ul class="photos-list">
       <li class="photo-list__item">
         <a href="#"><img class="photo-list__img" src="#" alt="Фото: Неродные просторы"></a>
-        <b class="caption">Неродные просторы</b>
+        <b class="caption photo-list__caption">Неродные просторы</b>
         <p class="subcaption">Автор фото: Борис</p>
         <span class="likes">1350</span>
       </li>
       <li class="photo-list__item">
         <a href=""><img class="photo-list__img" src="#" alt="Фото: Местная растительность"></a>
-        <b class="caption">Местная растительность</b>
+        <b class="caption photo-list__caption">Местная растительность</b>
         <p class="subcaption">Автор фото: Сергей</p>
         <span class="likes">143</span>
       </li>
       <li class="photo-list__item">
         <a href="#"><img class="photo-list__img" src="#" alt="Фото: Дорога на север"></a>
-        <b class="caption">Дорога на север</b>
+        <b class="caption photo-list__caption">Дорога на север</b>
         <p class="subcaption">Автор фото: Петр</p>
         <span class="likes">96</span>
       </li>
       <li class="photo-list__item">
         <a href="#"><img class="photo-list__img" src="#" alt="Фото: Мост дьявола"></a>
-        <b class="caption">Мост дьявола</b>
+        <b class="caption photo-list__caption">Мост дьявола</b>
         <p class="subcaption">Автор фото: Антон</p>
         <span class="likes">254</span>
       </li>
@@ -75,7 +77,7 @@
     <div class="social page-footer__social">
       <a class="social__link social__link--twitter" href="#">Twitter</a>
       <a class="social__link social__link--facebook" href="#">Facebook</a>
-      <a class="social__link social__link--youtube" href="#">Youtobe</a>
+      <a class="social__link social__link--youtube" href="#">Youtube</a>
     </div>
     <div class="copyright page-footer__copyright">
       <a class="copyright__link" href="https://echo.htmlacademy.ru">Разработано</a>

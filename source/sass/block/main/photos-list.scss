@@ -1,0 +1,23 @@
+.photos-list {
+  @include list-style-none;
+}
+
+.photo-list__item {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  // для сетки
+  border: 1px solid red;
+}
+
+.photo-list__caption {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+}
+
+.subcaption {
+  font-family: "PT Sans", sans-serif;
+}
+

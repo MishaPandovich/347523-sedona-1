@@ -1,0 +1,23 @@
+.features-list {
+  @include list-style-none;
+
+  // для сетки
+  border: 1px solid red;
+}
+
+.features-list__inner .text {
+  margin: 0;
+}
+
+.features-list__inner--blue {
+  background-color: $color-background-blue;
+  color: $color-font-white;
+}
+
+.features-sublist {
+  @include list-style-none;
+}
+
+.features-list__inner--gray {
+  background-color: $color-background-gray;
+}

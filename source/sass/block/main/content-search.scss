@@ -1,0 +1,19 @@
+// для сетки
+.content-search {
+  border: 1px solid red;
+}
+
+.content-search__caption {
+  font-size: 21px;
+}
+
+.content-search__text {
+  line-height: 24px;
+}
+
+// стили голубой кнопки "найти гостинницу"
+.content-search__button {
+  width: 210px;
+  height: 30px;
+  padding: 15px 35px 15px 35px;
+}

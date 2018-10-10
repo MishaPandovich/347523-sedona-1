@@ -1,0 +1,18 @@
+.section-comment {
+  border: 1px solid red;
+}
+
+.section-comment__input {
+  padding: 15px;
+
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  text-decoration: none;
+
+  text-align: left;
+  vertical-align: middle;
+
+  background-color: $color-background-gray;
+  border: none;
+}
