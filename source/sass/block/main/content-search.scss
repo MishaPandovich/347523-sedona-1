@@ -1,5 +1,7 @@
 // для сетки
 .content-search {
+  padding: 29px 20px 40px 20px;
+  text-align: center;
   border: 1px solid red;
 }
 
@@ -15,5 +17,6 @@
 .content-search__button {
   width: 210px;
   height: 30px;
+  margin-top: 40px;
   padding: 15px 35px 15px 35px;
 }

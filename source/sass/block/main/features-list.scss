@@ -1,3 +1,4 @@
+/*-------------------------------------Мобильная версия------------------------------------------*/
 .features-list {
   @include list-style-none;
 
@@ -9,15 +10,151 @@
   margin: 0;
 }
 
+// голубые блоки
 .features-list__inner--blue {
+  padding: 0 20px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  text-align: center;
   background-color: $color-background-blue;
   color: $color-font-white;
 }
 
+// Назвать типа с декорацией и без декорации
+.features-list__inner--blue-two {
+  padding-top: 40px;
+}
+
+.features-list__inner--blue span {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.container-background {
+  height: 260px;
+  background-position: 50% 50%;
+}
+
+.container-background--one {
+  background: #ffffff url(../img/main-city-tablet@1x.jpg) no-repeat;
+}
+
+.container-background--two {
+  background: #ffffff url(../img/main-bridge-mobile@1x.jpg) no-repeat;
+}
+
+//
 .features-sublist {
   @include list-style-none;
+  padding: 30px 30px 8px 67px;
+}
+
+.features-sublist__item {
+  margin-bottom: 30px;
 }
 
 .features-list__inner--gray {
+  padding: 25px 30px 30px 30px;
+
+  text-align: center;
   background-color: $color-background-gray;
+}
+
+.features-list__inner--gray span {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+/*-------------------------------------Планшетная версия версия----------------------------------------*/
+@media (min-width: $tablet-width) {
+  // временно для удобства
+  body {
+    width: 768px;
+  }
+
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features-list__item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features-sublist {
+    display: flex;
+    padding: 155px 0px 25px 0px;
+  }
+
+  .features-sublist__item {
+    width: 165px;
+    margin-left: 45px;
+    margin-right: 43px;
+
+    text-align: center;
+
+    border: 1px solid red;
+  }
+
+  .features-sublist__item .caption {
+    font-size: 21px;
+  }
+
+  .features-sublist__item .text {
+    margin-top: 21px;
+  }
+
+  .features-sublist__item--housing {
+    order: -2;
+  }
+
+  .features-sublist__item--food {
+    order: -1;
+  }
+
+
+/////
+  .features-list__inner--blue {
+    width: 173px;
+    padding: 43px 40px;
+  }
+
+  .features-list__inner--blue .caption {
+    font-size: 21px;
+  }
+
+  .features-list__inner--blue span {
+    margin-bottom: 25px;
+  }
+
+    // Назвать типа с декорацией и без декорации
+  .features-list__inner--blue-two {
+    order: 1;
+  }
+
+  .container-background {
+    min-width: 510px;
+    height: 255px;
+  }
+
+  .container-background--one {
+    background: #ffffff url(../img/main-city-tablet@1x.jpg) no-repeat;
+  }
+
+  .container-background--two {
+    background: #ffffff url(../img/main-bridge-tablet@1x.jpg) no-repeat;
+  }
+
+  .features-list__inner--gray {
+    width: 158px;
+    padding: 48px 48px;
+  }
+
+  .features-list__inner--gray .caption {
+    font-size: 21px;
+  }
 }

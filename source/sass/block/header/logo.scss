@@ -1,3 +1,53 @@
 .logo {
+  height: 56px;
+  position: relative;
   border: 1px solid red;
+}
+
+.logo__img {
+  position: absolute;
+  width: 105px;
+  height: 55px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  background: red;
+}
+
+.toggle-mobile__link {
+  display: block;
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  width: 25px;
+  height: 25px;
+
+  background-color: red;
+}
+
+.toggle-mobile__link .visually-hidden {
+  display: none;
+}
+
+/*-------------------------------------Планшетная версия версия-----------------------------------------*/
+@media (min-width: $tablet-width) {
+  // временно для удобства
+  body {
+    width: 768px;
+  }
+
+  .logo {
+    position: absolute;
+    // потом поправить
+    top: 0;
+    left: 46%;
+  }
+
+  // убираем атрибуты из мобильной версии
+  .toggle-mobile__link {
+    display: none;
+  }
 }

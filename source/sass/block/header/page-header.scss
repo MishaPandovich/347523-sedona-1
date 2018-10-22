@@ -1,0 +1,58 @@
+/*-------------------------------------Мобильная версия------------------------------------------*/
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-content__container-background {
+  height: 390px;
+  background: #ffffff url(../img/bg-back-mobile@1x.jpg) no-repeat;
+  background-position: 50% 50%;
+}
+
+.header-content__inner {
+  margin: 0 25px;
+  margin-top: 38px;
+
+  text-align: center;
+}
+
+.header-content {
+  background-color: $color-font-white;
+  text-align: center;
+
+  border: 1px solid red;
+}
+
+.header-content__text {
+  margin-top: 27px;
+  margin-bottom: 25px;
+  line-height: 24px;
+}
+
+/*-------------------------------------Планшетная версия версия----------------------------------------*/
+@media (min-width: $tablet-width) {
+  .header-content__container-background {
+    height: 520px;
+    background: #ffffff url(../img/bg-back-tablet@1x.jpg) no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .header-content__inner {
+    margin: 0 125px;
+    margin-top: 50px;
+
+    text-align: center;
+  }
+
+  .header-content__caption {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .header-content__text {
+    margin-top: 32px;
+    margin-bottom: 45px;
+    line-height: 26px;
+  }
+}

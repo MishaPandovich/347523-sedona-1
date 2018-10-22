@@ -10,8 +10,7 @@
   <header class="page-header">
     <div class="logo page-header__logo">
       <img class="logo__img" src="#" alt="логотип-Sedona">
-      <div class="toggle-mobile">
-        <a class="toggle-mobile__link" href="#"><span class="visually-hidden">Открыть меню</span></a>
+      <a class="toggle-mobile__link" href="#"><span class="visually-hidden">Открыть меню</span></a>
       </div>
     </div>
     <nav class="nav page-header__nav">
@@ -21,14 +20,14 @@
         <li class="nav-list__item"><a class="nav-list__link" href="#">Форма отзыва</a></li>
         <li class="nav-list__item"><a class="nav-list__link" href="#">Html academy</a></li>
       </ul>
-      <div class="button-mobile nav__button-mobile">
-        <a class="button-mobile__close" href="#"><span class="visually-hidden">Закрыть</span></a>
-      </div>
+      <a class="button-mobile__close" href="#"><span class="visually-hidden">Закрыть</span></a>
     </nav>
     <div class="header-content page-header__header-content">
+      <div class="header-content__container-background">
       <!--Ещё не ясно будет это блок с фиксированной шириной внутири которого SVG или фон через псевдоклас-->
-      <div class="content-inner">
-        <b class="caption header-content__caption">Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
+      </div>
+      <div class="header-content__inner">
+        <b class="caption header-content__caption">Седона &#8211; небольшой городок в Аризоне, заслуживающий большего!</b>
         <p class="text header-content__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
     </div>
@@ -37,51 +36,56 @@
     <ul class="features-list">
       <li class="features-list__item">
         <div class="features-list__inner features-list__inner--blue">
-          <b class="caption">Настоящий городок</b>
+          <b class="caption">Настоящий городок</b><br>
           <span>&#8212; &#8470;1 &#8212;</span>
           <p class="text">Седона не атракцион для туристов, там течет своя жизнь</p>
         </div>
-        <!--Ещё не ясно будет это блок с фиксированной шириной внутири которого SVG или фон через псевдоклас-->
+        <div class="container-background container-background--one">
+          <!--Ещё не ясно будет это блок с фиксированной шириной внутири которого SVG или фон через псевдоклас-->
+        </div>
         <ul class="features-sublist">
-          <li class="features-sublist__item">
+          <li class="features-sublist__item features-sublist__item--housing">
             <b class="caption">Жилье</b>
             <p class="text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
-          <li class="features-sublist__item">
+          <li class="features-sublist__item features-sublist__item--souvenirs">
             <b class="caption">Сувениры</b>
             <p class="text">Не только китайского, но и местного производства!</p>
           </li>
-          <li class="features-sublist__item">
+          <li class="features-sublist__item features-sublist__item--food">
             <b class="caption">Еда</b>
-            <p class="text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <p class="text">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
           </li>
         </ul>
       </li>
       <li class="features-list__item">
-        <div class="features-list__inner features-list__inner--blue">
-          <b class="caption">Там есть мост дьявола</b>
+        <!--Назвать типа с декорацией и без декорации-->
+        <div class="features-list__inner features-list__inner--blue features-list__inner--blue-two">
+          <b class="caption">Там есть мост дьявола</b><br>
           <span>&#8212; &#8470;2 &#8212;</span>
           <p class="text">Да по нему можно пройти! если вы осмелитесь, конечно</p>
         </div>
-        <!--Ещё не ясно будет это блок с фиксированной шириной внутири которого SVG или фон через псевдоклас-->
+        <div class="container-background container-background--two">
+          <!--Ещё не ясно будет это блок с фиксированной шириной внутири которого SVG или фон через псевдоклас-->
+        </div>
       </li>
       <li class="features-list__item">
         <div class="features-list__inner features-list__inner--gray">
-          <b class="caption">Небольшая площадь</b>
+          <b class="caption">Небольшая площадь</b><br>
           <span>&#8212; &#8470;3 &#8212;</span>
           <p class="text">Все интересные места находятся очень близко</p>
         </div>
       </li>
       <li class="features-list__item">
         <div class="features-list__inner features-list__inner--gray">
-          <b class="caption">Красивая дорога</b>
+          <b class="caption">Красивая дорога</b><br>
           <span>&#8212; &#8470;4 &#8212;</span>
           <p class="text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
       </li>
       <li class="features-list__item">
         <div class="features-list__inner features-list__inner--gray">
-          <b class="caption">Мало туристов</b>
+          <b class="caption">Мало туристов</b><br>
           <span>&#8212; &#8470;5 &#8212;</span>
           <p class="text">Большинство едет в Гранд Каньон и толпится там</p>
         </div>
