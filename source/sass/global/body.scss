@@ -4,15 +4,6 @@ body {
   padding: 0;
 }
 
-// для сетки
-body {
-  //потом поменять на мин
-  //width:320px;
-  margin: 0 auto;
-
-  border: 1px solid black;
-}
-
 // общие стили для текста
 .caption {
   font-family: "PT Sans Bold", sans-serif;
@@ -46,4 +37,19 @@ body {
   background-color: $color-background-blue;
 
   border: none;
+}
+
+@media (min-width: $desctop-width)  {
+  body {
+    background: #f2f2f2;
+  }
+
+  .container-content {
+    width: 1200px;
+    margin: 0 auto;
+
+    max-width: 1380px;
+    background: #ffffff;
+    box-shadow: 0 0 15px 0 rgba(146, 146,146,1);
+  }
 }
