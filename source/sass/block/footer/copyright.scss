@@ -1,3 +1,24 @@
 .copyright {
-  border: 1px solid red;
+  width: 140px;
+  margin: 0 auto;
+  margin-top: 12.5%;
+  position: relative;
 }
+
+.copyright__link {
+  display: block;
+  padding-top: 10px;
+  margin-left: -20px;
+}
+
+.copyright__link::after {
+  display: block;
+  position: absolute;
+  content: " ";
+  width: 30px;
+  height: 40px;
+  top: 0;
+  right: 0;
+  background: black;
+}
+

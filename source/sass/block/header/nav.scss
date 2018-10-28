@@ -1,7 +1,7 @@
 /*-------------------------------------Мобильная версия------------------------------------------*/
-// для сетки
 .nav {
   order: -1;
+  position: relative;
 }
 
 .nav-list {
@@ -15,6 +15,10 @@
 .nav-list__item {
   border-top: 1px solid #9ac2db;
   border-bottom: 1px solid #678fa8;
+}
+
+.nav-list__item--hidden {
+  display: none;
 }
 
 .nav-list__link {
@@ -47,6 +51,7 @@
   display: none;
 }
 
+// реакции ссылок на нажатие
 .nav-list__link:hover {
   background: #669ec0;
 }
@@ -59,25 +64,31 @@
 
 /*-------------------------------------Планшетная версия версия----------------------------------------*/
 @media (min-width: $tablet-width) {
-  // временно для удобства
-  body {
-    width: 768px;
-  }
-
   .nav-list {
     display: flex;
     position: relative;
     padding: 13px 0;
-    // для сетки, потом изменить
-    margin-left: 48px;
-    margin-right: 25px;
+    margin-left: 6.25%;
+    margin-right: 3%;
     justify-content: space-between;
 
     background-color: #ffffff;
     box-shadow: none;
     border: none;
   }
-  //пока не придумаю как делать
+
+  .nav-list .nav-list__item:nth-child(1) {
+    margin-right: 5%;
+  }
+
+  .nav-list .nav-list__item:nth-child(2) {
+    margin-right: 29.8%;
+  }
+
+  .nav-list .nav-list__item:nth-child(3) {
+    margin-right: 7%;
+  }
+
   .nav-list__item {
     border: none;
   }
@@ -89,12 +100,63 @@
     color: $color-font-black;
   }
 
+  .nav-list__link--active {
+    color: #766357;
+  }
+
   // убираем крестик из мобильной версии
-  // кнопка крестик, потом с svg
   .button-mobile__close {
     display: none;
   }
 
+  // реакции ссылок на нажатие
+  .nav-list__link:hover {
+    background: #ffffff;
+    color: #81b3d2;
+  }
 
-  // дописать hovers
+  .nav-list__link:active {
+    background: #ffffff;
+    color: #c1c1c1;
+  }
+
+  .nav-list__link--active:hover {
+    color: #604e43;
+  }
+
+  .nav-list__link--avtive:active {
+    background: #ffffff;
+    color: #f2f2f2;
+  }
+}
+
+/*-------------------------------------Десктопная версия версия----------------------------------------*/
+@media (min-width: $desctop-width) {
+  .nav-list {
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 8.5%;
+  }
+
+  .nav-list .nav-list__item:nth-child(1) {
+    margin-right: 9%;
+  }
+
+  .nav-list .nav-list__item:nth-child(2) {
+    margin-right: 31%;
+  }
+
+  .nav-list .nav-list__item:nth-child(3) {
+    margin-right: 7%;
+  }
+
+  .nav-list__item {
+    border: none;
+  }
+
+  .nav-list__item--hidden {
+    display: block;
+    width: 16.25%;
+    margin-left: 7.5%;
+  }
 }
