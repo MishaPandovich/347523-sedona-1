@@ -1,8 +1,8 @@
-.section-comment {
-  border: 1px solid red;
-}
-
-.section-comment__input {
+.section__textarea--comment {
+  width: 80%;
+  height: 160px;
+  margin: 0 6.5%;
+  margin-bottom: 50px;
   padding: 15px;
 
   font-family: "PT Sans Bold", sans-serif;

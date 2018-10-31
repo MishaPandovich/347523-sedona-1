@@ -1,10 +1,56 @@
-// для сетки
-.section-rating {
-  border: 1px solid red;
+.section__content--rating {
+  width: 280px;
+  margin: 0 auto;
+
+  padding-bottom: 8px;
 }
 
-.section-rating__label {
-  font-family: "PT Sans Bold", sans-serif;
-  font-size: 18px;
-  line-height: 26px;
+.section__label--rating {
+  display: inline-block;
+  position: relative;
+  width: 255px;
+  height: 60px;
+  margin-top: 10px;
+
+  text-align: right;
 }
+
+.section__input--rating {
+  display: none;
+}
+
+.section__input--rating + label::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 56px;
+  height: 56px;
+
+  border-radius: 100%;
+  background: #e5e5e5;
+}
+
+.section__input--rating:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 18px;
+  width: 21px;
+  height: 21px;
+
+  border-radius: 100%;
+  background: #000000;
+}
+
+/*
+.form-filters__input:hover + label,
+.form-filters__input:focus + label {
+    color: #663d15;
+}
+
+.form-filters__input:disabled + label {
+    color: #000000;
+
+    opacity: 0.5;
+}*/

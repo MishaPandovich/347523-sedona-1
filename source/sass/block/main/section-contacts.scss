@@ -1,21 +1,18 @@
-.section-contacts {
-  border: 1px solid red;
+.section__content--contacts {
+  display: flex;
+  flex-direction: column;
+
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 8px;
 }
 
-.section-contacts__label {
-  font-family: "PT Sans", sans-serif;
-  font-size: 14px;
-  line-height: 26px;
-  text-transform: uppercase;
+.section__label--contacts {
+  margin-left: 18px;
+  margin-bottom: 10px;
 }
 
-.section-contacts__input {
-  padding: 15px;
-
-  font-family: "PT Sans Bold", sans-serif;
-  font-size: 18px;
-  line-height: 26px;
-
-  background-color: #f2f2f2;
-  border: none;
+.section__input--contacts {
+  flex-grow: 1;
+  margin-bottom: 18px;
 }

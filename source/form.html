@@ -34,55 +34,68 @@
     </header>
     <main class="page-main">
       <form class="form-feedback" action="#" method="post">
-        <fieldset class="section section-full-name">
-          <legend class="section__caption">Представьтесь:</legend>
-          <label class="section-full-name__label" for="name">Имя*:</label>
-          <input class="section-full-name__input" type="text" name="name" placeholder="Петр" id="name" required>
-          <label class="section-full-name__label"for="surname">Фамилия*:</label>
-          <input class="section-full-name__input"  type="text" name="surname" placeholder="Иванов" id="surname" required>
-          <label class="section-full-name__label" for="patronymic">Отчество:</label>
-          <input class="section-full-name__input"  type="text" name="patronymic" placeholder="Александрович" id="patronymic">
-        </fieldset>
-        <fieldset class="section section-contacts">
-          <legend class="section__caption">Контактная информация:</legend>
-          <label class="section-contacts__label" for="phone">Контактный телефон*:</label>
-          <input class="section-contacts__input" type="text" name="phone" placeholder="Введите телефон" id="phone" required>
-          <label class="section-contacts__label" for="e-mail">Электронная почта*:</label>
-          <input class="section-contacts__input" type="text" name="e-mail" placeholder="Введите e-mail" id="e-mail" required>
-        </fieldset>
-        <fieldset class="section section-rating">
-          <legend class="section__caption">Ваше общее впечатление:</legend>
-          <input class="section-rating__input" type="radio" name="rating" value="good" id="good" checked>
-          <label class="section-rating__label" for="good">Скорее положительное</label>
-          <input class="section-rating__input" type="radio" name="rating" value="bad" id="bad">
-          <label class="section-rating__label" for="bad">Скорее отрицательное</label>
-          <input class="section-rating__input" type="radio" name="rating" value="normal" id="normal">
-          <label class="section-rating__label" for="normal">Затрудняюсь ответить</label>
-        </fieldset>
-        <fieldset class="section section-place">
-          <legend class="section__caption">Посещенные достопримечательности:</legend>
-          <input class="section-place__input" type="checkbox" name="devil-bridge" value="devil-bridge" id="devil-bridge" checked>
-          <label class="section-place__label" for="devil-bridge">Мост Дьявола</label>
-          <input class="section-place__input" type="checkbox" name="mountain-bell" value="mountain-bell" id="mountain-bell" checked>
-          <label class="section-place__label" for="mountain-bell">Гора-Колокол</label>
-          <input class="section-place__input" type="checkbox" name="slide-park" value="slide-park" id="slide-park"checked>
-          <label class="section-place__label" for="slide-park">Слайд-парк</label>
-          <input class="section-place__input" type="checkbox" name="red-rock" value="red-rock" id="red-rock">
-          <label class="section-place__label" for="red-rock">Красные скалы</label>
-        </fieldset>
-        <fieldset class="section section-comment">
-          <legend class="section__caption">Опишите свои эмоции:</legend>
-          <textarea class="section-comment__input" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
-        </fieldset>
+		<div class="section form-feedback__section form-feedback__section--full-name">
+			<h3 class="caption section__caption">Представьтесь:</h3>
+			<div class="section__content section__content--full-name">
+				<label class="section__label section__label--full-name section__label--long-small" for="name">Имя*:</label>
+				<input class="section__input section__input--full-name" type="text" name="name" placeholder="Петр" id="name" required>
+				<label class="section__label section__label--full-name" for="surname">Фамилия*:</label>
+				<input class="section__input section__input--full-name"  type="text" name="surname" placeholder="Иванов" id="surname" required>
+				<label class="section__label section__label--full-name" for="patronymic">Отчество:</label>
+				<input class="section__input section__input--full-name"  type="text" name="patronymic" placeholder="Александрович" id="patronymic">
+			</div>
+		</div>
+
+		<!--<div class="section form-feedback__section form-feedback__section--contacts">
+			<h3 class="caption section__caption">Контактная информация:</h3>
+			<div class="section__content section__content--contacts">
+			  <label class="section__label section__label--contacts" for="phone">Контактный телефон*:</label>
+			  <input class="section__input section__input--contacts" type="text" name="phone" placeholder="Введите телефон" id="phone" required>
+			  <label class="section__label section__label--contacts" for="e-mail">Электронная почта*:</label>
+			  <input class="section__input section__input--contacts" type="text" name="e-mail" placeholder="Введите e-mail" id="e-mail" required>
+			</div>
+		</div>-->
+
+        <div class="section form-feedback__section form-feedback__section--rating">
+			<h3 class="section__caption">Ваше общее впечатление:</h3>
+			<div class="section__content section__content--rating section__content--font-strong">
+			  <input class="section__input section__input--rating" type="radio" name="rating" value="good" id="good" checked>
+			  <label class="section__label section__label--rating" for="good">Скорее положительное</label>
+			  <input class="section__input section__input--rating" type="radio" name="rating" value="bad" id="bad">
+			  <label class="section__label section__label--rating" for="bad">Скорее отрицательное</label>
+			  <input class="section__input section__input--rating" type="radio" name="rating" value="normal" id="normal">
+			  <label class="section__label section__label--rating" for="normal">Затрудняюсь ответить</label>
+			</div>
+		</div>
+
+        <!--<div class="section form-feedback__section form-feedback__section--place">
+			<h3 class="section__caption">Посещенные<br> достопримечательности:</h3>
+			<div class="section__content section__content--place section__content--font-strong">
+			  <input class="section__input section__input--place" type="checkbox" name="devil-bridge" value="devil-bridge" id="devil-bridge" checked>
+			  <label class="section__label section__label--place" for="devil-bridge">Мост Дьявола</label>
+			  <input class="section__input section__input--place" type="checkbox" name="mountain-bell" value="mountain-bell" id="mountain-bell" checked>
+			  <label class="section__label section__label--place" for="mountain-bell">Гора-Колокол</label>
+			  <input class="section__input section__input--place" type="checkbox" name="slide-park" value="slide-park" id="slide-park"checked>
+			  <label class="section__label section__label--place" for="slide-park">Слайд-парк</label>
+			  <input class="section__input section__input--place" type="checkbox" name="red-rock" value="red-rock" id="red-rock">
+			  <label class="section__label section__label--place" for="red-rock">Красные скалы</label>
+			</div>
+		</div>
+		
+		<div class="section form-feedback__section form-feedback__section--comment">
+			<h3 class="section__caption">Опишите свои эмоции:</h3>
+			<textarea class="section__textarea section__textarea--comment" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+		</div>-->
+
         <input class="button button--blue form-feedback__button" type="submit" name="submit-form" value="отправить отзыв">
       </form>
     </main>
     <footer class="page-footer">
       <b class="page-footer__caption">#VisitSedona</b>
       <div class="social page-footer__social">
-        <a class="social__link social__link--twitter" href="#">Twitter</a>
-        <a class="social__link social__link--facebook" href="#">Facebook</a>
-        <a class="social__link social__link--youtube" href="#">Youtube</a>
+        <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Twitter</span></a>
+        <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Facebook</span></a>
+        <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Youtube</span></a>
       </div>
       <div class="copyright page-footer__copyright">
         <a class="copyright__link" href="https://echo.htmlacademy.ru">Разработано</a>

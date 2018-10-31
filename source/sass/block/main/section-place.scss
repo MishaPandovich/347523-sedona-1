@@ -1,10 +1,56 @@
-// для сетки
-.section-place {
-  border: 1px solid red;
+.section__content--place {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 280px;
+  margin: 0 auto;
 }
 
-.section-place__label {
-  font-family: "PT Sans Bold", sans-serif;
-  font-size: 18px;
-  line-height: 26px;
+.section__label--place {
+  display: inline-block;
+  position: relative;
+  width: 125px;
+  height: 60px;
+  padding-left: 75px;
+  padding-top: 10px;
+}
+
+.section__input--place {
+  display: none;
+}
+
+.section__input--place + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 56px;
+  height: 56px;
+
+  border-radius: 10%;
+  background: #e5e5e5;
+}
+
+.section__input--place:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 16px;
+  width: 21px;
+  height: 21px;
+
+  background: black;
+}
+
+@media (min-width: 480px) {
+  .section__content--place {
+    width: 85%;
+    justify-content: space-between;
+
+    max-width: 450px;
+  }
+
+  .section__label--place {
+    margin: 20px 0;
+  }
 }
