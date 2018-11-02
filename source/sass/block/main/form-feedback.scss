@@ -1,29 +1,6 @@
-.form-feedback {
-  border: 1px solid red;
-}
-
-// убираю рамки у блоков(fieldset) формы
-.section {
-  border: none;
-}
-
-.section__caption {
-  font-family: "PT Sans Bold", sans-serif;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-
-// стили голубой кнопки "отправить отзыв"
-.form-feedback__button {
-  width: 280px;
-  height: 60px;
-  padding: 15px 50px;
-}
-
 // стили placeholder`a у кнопок
 /* webkit */
-.form-feedback input::-webkit-input-placeholder {
+.section-content input::-webkit-input-placeholder {
   font-family: "PT Sans Bold", sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -33,7 +10,7 @@
 }
 
 /* Firefox 19+ */
-.form-feedback input::-moz-placeholder {
+.section-content input::-moz-placeholder {
   font-family: "PT Sans Bold", sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -43,7 +20,7 @@
 }
 
 /* Firefox 18- */
-.form-feedback input:-moz-placeholder {
+.section-content input:-moz-placeholder {
   font-family: "PT Sans Bold", sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -53,7 +30,7 @@
 }
 
 /* IE */
-.form-feedback input:-ms-input-placeholder {
+.section-content input:-ms-input-placeholder {
   font-family: "PT Sans Bold", sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -100,4 +77,91 @@
 
   color: $color-placeholder-black;
   opacity: 1;
+}
+
+// начинается верстка
+.section {
+  border-top: 1px solid #f2f2f2;
+}
+
+.section__caption {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+// общие стили для label
+.section__label {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.section__input {
+  padding: 15px;
+
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.section__content--font-strong .section__label {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+}
+
+// стили голубой кнопки "отправить отзыв"
+.form-feedback__button {
+  width: 280px;
+  height: 60px;
+  padding: 15px 50px;
+  margin-bottom: 60px;
+}
+
+// переход на планшетную версию сайта осуществляется раньше
+@media (min-width: 650px) {
+  .form-feedback {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 650px;
+    margin: 0 auto;
+  }
+
+  .form-feedback__section--rating {
+    order: -1;
+  }
+
+  .section__caption {
+    font-size: 21px;
+  }
+
+  .section {
+    border: none;
+  }
+
+  .form-feedback__button {
+    width: 325px;
+    margin-top: 30px;
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .form-feedback {
+    width: 960px;
+  }
+
+  .form-feedback__button {
+    width: 440px;
+    margin-left: 0;
+  }
 }
