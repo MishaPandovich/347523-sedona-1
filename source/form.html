@@ -38,37 +38,37 @@
 			<h3 class="caption section__caption">Представьтесь:</h3>
 			<div class="section__content section__content--full-name">
 				<label class="section__label section__label--full-name section__label--long-small" for="name">Имя*:</label>
-				<input class="section__input section__input--full-name" type="text" name="name" placeholder="Петр" id="name" required>
+				<input class="section__input section__input--full-name section__input--long-big" type="text" name="name" placeholder="Петр" id="name" required><br>
 				<label class="section__label section__label--full-name" for="surname">Фамилия*:</label>
-				<input class="section__input section__input--full-name"  type="text" name="surname" placeholder="Иванов" id="surname" required>
+				<input class="section__input section__input--full-name"  type="text" name="surname" placeholder="Иванов" id="surname" required><br>
 				<label class="section__label section__label--full-name" for="patronymic">Отчество:</label>
 				<input class="section__input section__input--full-name"  type="text" name="patronymic" placeholder="Александрович" id="patronymic">
 			</div>
 		</div>
 
-		<!--<div class="section form-feedback__section form-feedback__section--contacts">
+		<div class="section form-feedback__section form-feedback__section--contacts">
 			<h3 class="caption section__caption">Контактная информация:</h3>
 			<div class="section__content section__content--contacts">
-			  <label class="section__label section__label--contacts" for="phone">Контактный телефон*:</label>
-			  <input class="section__input section__input--contacts" type="text" name="phone" placeholder="Введите телефон" id="phone" required>
+			  <label class="section__label section__label--contacts section__label--phone" for="phone"><span>Контактный телефон*:</span></label>
+			  <input class="section__input section__input--contacts section__input--phone" type="text" name="phone" placeholder="Введите телефон" id="phone" required>
 			  <label class="section__label section__label--contacts" for="e-mail">Электронная почта*:</label>
 			  <input class="section__input section__input--contacts" type="text" name="e-mail" placeholder="Введите e-mail" id="e-mail" required>
 			</div>
-		</div>-->
+		</div>
 
         <div class="section form-feedback__section form-feedback__section--rating">
 			<h3 class="section__caption">Ваше общее впечатление:</h3>
 			<div class="section__content section__content--rating section__content--font-strong">
 			  <input class="section__input section__input--rating" type="radio" name="rating" value="good" id="good" checked>
-			  <label class="section__label section__label--rating" for="good">Скорее положительное</label>
+			  <label class="section__label section__label--rating" for="good">Скорее положительное</label><br>
 			  <input class="section__input section__input--rating" type="radio" name="rating" value="bad" id="bad">
-			  <label class="section__label section__label--rating" for="bad">Скорее отрицательное</label>
+			  <label class="section__label section__label--rating" for="bad">Скорее отрицательное</label><br>
 			  <input class="section__input section__input--rating" type="radio" name="rating" value="normal" id="normal">
 			  <label class="section__label section__label--rating" for="normal">Затрудняюсь ответить</label>
 			</div>
 		</div>
-
-        <!--<div class="section form-feedback__section form-feedback__section--place">
+		
+        <div class="section form-feedback__section form-feedback__section--place">
 			<h3 class="section__caption">Посещенные<br> достопримечательности:</h3>
 			<div class="section__content section__content--place section__content--font-strong">
 			  <input class="section__input section__input--place" type="checkbox" name="devil-bridge" value="devil-bridge" id="devil-bridge" checked>
@@ -85,7 +85,7 @@
 		<div class="section form-feedback__section form-feedback__section--comment">
 			<h3 class="section__caption">Опишите свои эмоции:</h3>
 			<textarea class="section__textarea section__textarea--comment" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
-		</div>-->
+		</div>
 
         <input class="button button--blue form-feedback__button" type="submit" name="submit-form" value="отправить отзыв">
       </form>

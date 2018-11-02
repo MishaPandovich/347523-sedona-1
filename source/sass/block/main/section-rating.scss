@@ -1,18 +1,18 @@
-.section__content--rating {
+.form-feedback__section--rating {
+  position: relative;
   width: 280px;
   margin: 0 auto;
-
-  padding-bottom: 8px;
 }
 
 .section__label--rating {
   display: inline-block;
   position: relative;
-  width: 255px;
-  height: 60px;
-  margin-top: 10px;
+  padding-left: 80px;
+  margin-bottom: 50px;
+}
 
-  text-align: right;
+.form-feedback__section--rating .section__caption {
+  margin-bottom: 35px;
 }
 
 .section__input--rating {
@@ -54,3 +54,29 @@
 
     opacity: 0.5;
 }*/
+
+// переход на планшетную версию сайта осуществляется раньше
+@media (min-width: 650px) {
+  .form-feedback__section--rating .section__caption {
+    text-align: left;
+  }
+
+  .form-feedback__section--rating::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -18px;
+    height: 260px;
+    border-right: 1px solid #e6e6e6;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .form-feedback__section--rating {
+    width: 450px;
+  }
+
+  .form-feedback__section--rating::after {
+    right: -13px;
+  }
+}

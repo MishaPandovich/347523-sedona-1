@@ -82,8 +82,6 @@
 // начинается верстка
 .section {
   border-top: 1px solid #f2f2f2;
-
-  border: 1px solid red;
 }
 
 .section__caption {
@@ -125,18 +123,45 @@
   width: 280px;
   height: 60px;
   padding: 15px 50px;
+  margin-bottom: 60px;
 }
 
-
-@media (min-width: $tablet-width) {
+// переход на планшетную версию сайта осуществляется раньше
+@media (min-width: 650px) {
   .form-feedback {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 60px;
-    margin-right: 60px;
+
+    width: 650px;
+    margin: 0 auto;
   }
 
   .form-feedback__section--rating {
     order: -1;
+  }
+
+  .section__caption {
+    font-size: 21px;
+  }
+
+  .section {
+    border: none;
+  }
+
+  .form-feedback__button {
+    width: 325px;
+    margin-top: 30px;
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .form-feedback {
+    width: 960px;
+  }
+
+  .form-feedback__button {
+    width: 440px;
+    margin-left: 0;
   }
 }
