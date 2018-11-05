@@ -36,8 +36,18 @@ body {
 
   color: $color-font-white;
   background-color: $color-background-blue;
+  cursor: pointer;
 
   border: none;
+}
+
+.button--blue:hover {
+  background: #669ec0
+}
+
+.button--blue:active {
+  opacity: 0.4;
+  background: #5496bd;
 }
 
 @media (min-width: $desctop-width)  {

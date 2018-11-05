@@ -1,6 +1,8 @@
 .social {
-  position: relative;
-  width: 150px;
+  display: flex;
+  justify-content: space-between;
+
+  width: 170px;
   margin: 0 auto;
   margin-top: 11.8%;
   height: 50px;
@@ -8,35 +10,31 @@
 
 .social__link {
   display: inline-block;
-}
-
-.social__link::before {
-  content: " ";
-  display: block;
-  position: absolute;
   width: 50px;
   height: 50px;
+  margin-left: 0;
 
   background-color: #81b3d2;
 }
 
-.social__link--twitter::before {
-  top: 0;
-  left: -5px;
-}
-
-.social__link--facebook::before {
-  top: 0;
-  left: 55px;
-}
-
-.social__link--youtube::before {
-  top: 0;
-  left: 115px;
-}
-
-.social__link .visually-hidden {
+.visually-hidden {
   display: none;
+}
+
+.social__icon {
+  width: 22px;
+  height: 22px;
+  margin-top: 12px;
+
+  fill: #ffffff;
+}
+
+.social__link:hover {
+  background-color: #669ec0;
+}
+
+.social__link:active .social__icon {
+  opacity: 0.6;
 }
 
 @media (min-width: $tablet-width) {

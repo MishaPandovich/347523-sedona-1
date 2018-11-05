@@ -17,7 +17,15 @@
 }
 
 .features-list__inner--decoration {
+  position: relative;
   padding-top: 18.75%;
+}
+
+.features-list__inner--decor {
+  position: absolute;
+  width: 102%;
+  left: -1%;
+  top: -5px;
 }
 
 .features-list__inner--blue span {
@@ -47,6 +55,33 @@
 
 .features-sublist__item {
   margin-bottom: 9.4%;
+}
+
+.features-sublist__caption {
+  position: relative
+}
+
+.features-sublist__caption::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -50px;
+
+  width: 40px;
+  height: 40px;
+}
+
+.features-sublist__caption--housing::before {
+  background: url("../img/icon-house.svg") no-repeat;
+}
+
+.features-sublist__caption--souvenirs::before {
+  background: url("../img/icon-gift.svg") no-repeat;
+}
+
+.features-sublist__caption--food::before {
+  background: url("../img/icon-burger.svg") no-repeat;
 }
 
 // серые блоки
@@ -95,7 +130,7 @@
 
 /*-------------------------------------Планшетная версия----------------------------------------*/
 // в данном случае переход на планшетную версию происходит раньше
-@media (min-width: 756px) {
+@media (min-width: $tablet-width) {
   .features-list {
     display: flex;
     flex-wrap: wrap;
@@ -136,6 +171,24 @@
     order: -1;
   }
 
+  .features-sublist__caption::before {
+    top: -100px;
+    width: 77px;
+    height: 77px;
+  }
+
+  .features-sublist__caption--housing::before {
+    left: -5px;
+  }
+
+  .features-sublist__caption--souvenirs::before {
+    left: 15px;
+  }
+
+  .features-sublist__caption--food::before {
+    left: -20px;
+  }
+
 // голубые блоки
   .features-list__inner.features-list__inner--blue {
     width: 22.5%;
@@ -157,6 +210,10 @@
 
   .features-list__inner--decoration {
     order: 0;
+  }
+
+  .features-list__inner--decor {
+    display: none;
   }
 
   .container-background {

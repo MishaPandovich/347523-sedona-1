@@ -126,6 +126,20 @@
   margin-bottom: 60px;
 }
 
+.form-feedback__remark {
+  display: none;
+}
+
+.section__input:hover,
+.section__input:focus {
+  background: #e5e5e5;
+}
+
+.section__input:active {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
 // переход на планшетную версию сайта осуществляется раньше
 @media (min-width: 650px) {
   .form-feedback {
@@ -152,6 +166,17 @@
     width: 325px;
     margin-top: 30px;
     margin-left: 25px;
+  }
+
+  .form-feedback__remark {
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: auto;
+
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
   }
 }
 
